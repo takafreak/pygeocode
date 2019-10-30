@@ -11,7 +11,7 @@ Google Maps API
 python pygeocode -a '53 State Street, Boston, MA 02109'
 ```
 3. You will see following output on terminal
-```shell
+```text
 42.3587344, -71.0562932, 53 State Street, Boston, MA 02109
 ```
 
@@ -21,12 +21,12 @@ python pygeocode -a '53 State Street, Boston, MA 02109'
 53 State Street, Boston, MA 02109
 163-8001 東京都新宿区西新宿2-8-1
 ```
-2. Run application as follows
+2. Run application as follows. (Assuming the file is saved as `addresses.txt` in previous step.)
+```shell
+python pygeocode.py -f addresses.txt
 ```
-python pygeocode.py -f addresses.txr
-```
-3. You will see following output on terminal
-```
+3. You will see following output on terminal.
+```text
 42.3587344, -71.0562932, 53 State Street, Boston, MA 02109
 35.6896342, 139.6921007, 163-8001 東京都新宿区西新宿2-8-1
 ```
