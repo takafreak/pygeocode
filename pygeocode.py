@@ -2,12 +2,11 @@ import requests
 import sys
 import getopt
 
-url = 'https://maps.googleapis.com/maps/api/geocode/json'
+url    = 'https://maps.googleapis.com/maps/api/geocode/json'
 apikey = ''
 
 def getGeocode(address):
 	params = {
-		'sensor': 'false',
 		'address': address,
 		'key': apikey
 	}
@@ -46,9 +45,9 @@ def getLatLng(address):
 def formatLatLngMsg(address):
 	body = getLatLng(address)
 	if body['success']:
-		msg = '{}, {}, {}'.format(body['lat'],body['lng'],address)
+		msg = '{}, {}, {}'.format(body['lat'],body['lng'],address.rstrip())
 	else:
-		msg = '{}, {}, {}'.format(body['status'],body['error_msg'],address)
+		msg = '{}, {}, {}'.format(body['status'],body['error_msg'],address.rstrip())
 	return msg
 
 def main(argv):
