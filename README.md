@@ -8,7 +8,7 @@ Google Maps API
 1. Get your Google API Key for Google Maps API.
 2. Modify pygeocode.py, include your API Key in `apikey` variable.
 
-# How to use with single address
+# How to generate geocode for a single address
 1. Run application as follows. Make sure to use single quote or double quote to surround address.
 ```shell
 python pygeocode -a '53 State Street, Boston, MA 02109'
@@ -18,7 +18,7 @@ python pygeocode -a '53 State Street, Boston, MA 02109'
 42.3587344, -71.0562932, 53 State Street, Boston, MA 02109
 ```
 
-# How to use with multiple addresses
+# How to generate geocode for multiple addresses
 1. Alternatively, if you want to generate geocode for multiple addresses, create text file as follows. Keep each address per line, save the file as UTF-8 encoding without BOM (byte order mark). You can combine multiple international addresses in local language. For example, an address in the US and an address in Japan. See example below.
 ```text
 53 State Street, Boston, MA 02109
