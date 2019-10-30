@@ -1,12 +1,16 @@
 # pygeocode
 Simple Python code for generating geocode (latitude and longitude) using Google Maps API.
 
+# Version
+  - 1.0
+  - Oct 30, 2019
+
 # Prerequisite
 Google Maps API
 
 # Setup
 1. Get your Google API Key for Google Maps API.
-2. Modify pygeocode.py, include your API Key in `apikey` variable.
+2. Set your Google API Key as an environment variable GOOGLE_APIKEY. Alternatively, you can use config.py file and set your API Key in where it says `YOUR_APIKEY`.
 
 # How to generate geocode for a single address
 1. Run application as follows. Make sure to use single quote or double quote to surround address.

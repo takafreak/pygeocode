@@ -1,9 +1,27 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#######################################
+#
+# pygeocode - Geocode generator
+# Simple commandline program to generate Geocode from addresses
+#
+# Author:    takafreak
+# Date:      Oct 30, 2019
+# Version:   1.0
+# Python:    3.7.x
+#
+#######################################
+
 import requests
 import sys
 import getopt
+import config
+import os
 
 url    = 'https://maps.googleapis.com/maps/api/geocode/json'
-apikey = ''
+apikey = os.getenv('GOOGLE_APIKEY',config.GOOGLE['apikey'])
+
 
 def getGeocode(address):
 	params = {
